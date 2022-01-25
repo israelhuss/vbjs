@@ -1,0 +1,52 @@
+{
+  "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+  "name": "VBJS",
+  "patterns": [
+    {
+      "include": "#keywords"
+    },
+    {
+      "include": "#strings"
+    }
+  ],
+  "repository": {
+    "labels": {
+      "patterns": [
+        {
+          "name": "labels.vbjs",
+          "match": "^:.*?;$"
+        }
+      ]
+    },
+    "keywords": {
+      "patterns": [
+        {
+          "name": "keyword.control.vbjs",
+          "match": "\\b(if|while|for|return)\\b"
+        }
+      ]
+    },
+    "javascript": {
+      "name": "source.js",
+      "begin": "^START_MARKER",
+      "end": "^END_MARKER",
+      "patterns": [
+        {
+          "include": "JavaScript.tmLanguage.json"
+        }
+      ]
+    },
+    "strings": {
+      "name": "string.quoted.double.vbjs",
+      "begin": "\"",
+      "end": "\"",
+      "patterns": [
+        {
+          "name": "constant.character.escape.vbjs",
+          "match": "\\\\."
+        }
+      ]
+    }
+  },
+  "scopeName": "source.vbjs"
+}

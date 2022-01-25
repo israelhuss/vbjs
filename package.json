@@ -1,0 +1,39 @@
+{
+  "name": "vbjs",
+  "displayName": "vbjs",
+  "description": "Language Support for vbjs",
+  "version": "0.0.1",
+  "icon": "images/VBJS.png",
+  "galleryBanner": {
+    "color": "#F5C5BE",
+    "theme": "light"
+  },
+  "engines": {
+    "vscode": "^1.63.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "vbjs",
+        "aliases": [
+          "VBJS",
+          "vbjs"
+        ],
+        "extensions": [
+          ".vbjs"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "vbjs",
+        "scopeName": "",
+        "path": "./syntaxes/vbjs.tmLanguage.json"
+      }
+    ]
+  }
+}
