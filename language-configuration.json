@@ -28,5 +28,9 @@
     ["\"", "\""],
     ["'", "'"],
     [":", ";"]
-  ]
+  ],
+  "icon": {
+    // the icon path for the language
+    "path": "images/VBJS.png"
+  }
 }

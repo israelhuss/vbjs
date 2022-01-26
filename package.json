@@ -31,8 +31,23 @@
     "grammars": [
       {
         "language": "vbjs",
-        "scopeName": "",
-        "path": "./syntaxes/vbjs.tmLanguage.json"
+        "scopeName": "source.vbjs",
+        "path": "./syntaxes/vbjs.tmLanguage.json",
+        "embeddedLanguages": {
+          "meta.embedded.block.javascript": "coffeescript"
+        }
+      },
+      {
+        "language": "javascript",
+        "scopeName": "source.js",
+        "path": "./syntaxes/JavaScript.tmLanguage.json"
+      },
+      {
+        "Language": "coffeescript",
+        "scopeName": "source.coffee",
+        "path": "./syntaxes/coffeescript.tmLanguage.json",
+        "begin": "^\\s*#\\s*(\\w*\\s*)?coffeescript",
+        "end": "^\\s*#!\\s*(\\w*\\s*)?coffeescript"
       }
     ]
   }
